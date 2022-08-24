@@ -24,7 +24,7 @@
 .hero__btn {
   @include margin-lr-auto;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
   width: 216px;
   }
 }

@@ -990,8 +990,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     width: calc((100% - 90px) / 4);
   }
 }
