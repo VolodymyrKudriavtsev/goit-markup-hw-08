@@ -2,23 +2,26 @@
 .primary-title {
   max-width: 360px;
   color: var(--white-color);
-  @include fonts (900, 26px, 1.62, 0.06em, uppercase, null);
+  @include fonts(900, 20px, 1.62, 0.06em, uppercase, null);
 }
 
 .hero__title {
   margin: 0 auto 30px;
 
+  @media screen and (min-width: 480px) {    
+    @include fonts(900, 26px, 1.36, 0.06em, uppercase, null);
+  }
+
   @media screen and (min-width: 1200px) {
     max-width: 696px;
-    @include fonts (900, 44px, 1.36, 0.06em, uppercase, null);
-
+    @include fonts(900, 44px, 1.36, 0.06em, uppercase, null);
   }
 }
 
 // вторинний
 .secondary-title {
   color: var(--h-text-color);
-  @include fonts (null, 36px, 1.17, 0.03em, null, center);
+  @include fonts(null, 36px, 1.17, 0.03em, null, center);
 }
 
 .work__title,
@@ -29,15 +32,19 @@
 // третинний
 .tetriary-title {
   color: var(--h-text-color);
-  @include fonts (null, 14px, 1.14, 0.03em, uppercase, null);
+  @include fonts(null, 14px, 1.14, 0.03em, uppercase, null);
 }
 
 .benefits__title {
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767.5px) {
+    text-align: center;
+  }
 }
 
 .team__name {
-  @include fonts (500, 16px, 1.19, 0.03em, none, center);  
+  @include fonts(500, 16px, 1.19, 0.03em, none, center);
   margin-bottom: 10px;
 }
 
