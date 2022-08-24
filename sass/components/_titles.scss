@@ -9,26 +9,32 @@
   margin: 0 auto 30px;
 
   @include mobile {
-    @include fonts(900, 26px, 1.36, 0.06em, uppercase, null);
+    @include fonts(null, 26px, null, null, null, null);
   }
 
   @include desktop {
     max-width: 696px;
-    @include fonts(900, 44px, 1.36, 0.06em, uppercase, null);
+    @include fonts(null, 44px, 1.36, null, null, null);
   }
 }
 
 // вторинний
 .secondary-title {
   color: var(--h-text-color);
-  @include fonts(null, 36px, 1.17, 0.03em, null, center);
+  @include fonts(null, 28px, 1.18, 0.03em, null, center);
 }
 
 .work__title,
 .team__title,
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include desktop {
+    margin-bottom: 50px;
+    @include fonts(null, 36px, 1.17, null, null, null);
+  }
 }
+
 // третинний
 .tetriary-title {
   color: var(--h-text-color);

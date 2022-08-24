@@ -247,28 +247,21 @@ img {
 }
 @media screen and (min-width: 480px) {
   .hero__title {
-    font-weight: 900;
     font-size: 26px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     max-width: 696px;
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
   }
 }
 
 .secondary-title {
   color: var(--h-text-color);
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -276,7 +269,16 @@ img {
 .work__title,
 .team__title,
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .work__title,
+.team__title,
+.clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .tetriary-title {
@@ -1019,7 +1021,14 @@ img {
 }
 
 .work {
-  padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+    padding-bottom: 94px;
+    min-width: 1600px;
+  }
 }
 
 .work__list {

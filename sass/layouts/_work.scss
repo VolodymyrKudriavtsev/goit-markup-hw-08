@@ -1,5 +1,11 @@
 .work {
-  padding-bottom: 94px;
+  display: none;
+
+  @include desktop {
+    display: block;
+    padding-bottom: 94px;
+    min-width: 1600px;
+  }
 }
 
 .work__list {
