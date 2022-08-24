@@ -1,0 +1,27 @@
+.clients__list {
+@include df-center($ai:null);
+  gap: 30px;
+}
+
+.clients__link {
+  @include df-center;
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  color: var(--icon-main-fill);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration) var(--transition-timing-function);
+  outline: transparent;
+
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+    border-color: var(--acent-color);
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}
