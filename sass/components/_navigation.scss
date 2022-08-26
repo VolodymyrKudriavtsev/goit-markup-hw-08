@@ -5,6 +5,11 @@
 
 .navigation__list {
   gap: 50px;
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
 }
 
 .navigation__link {
