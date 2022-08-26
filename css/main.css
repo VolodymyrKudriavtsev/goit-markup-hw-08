@@ -985,7 +985,7 @@ img {
 .benefits__item {
   width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+@media screen and (min-width: 768px) {
   .benefits__item {
     width: calc((100% - 30px) / 2);
   }
@@ -1107,10 +1107,23 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
+}
+
+.clients__item {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
@@ -1124,7 +1137,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   height: 92px;
-  width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--icon-main-fill);
