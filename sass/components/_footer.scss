@@ -3,20 +3,37 @@
   padding: 60px 0;
 
   .container {
-    @include df-center($jc: null, $ai: baseline);
+    display: flex;
+    flex-wrap: wrap;
+
+    text-align: center;
+
+    // @include df-center($jc: null, $ai: baseline);
+  }
+
+  @include desktop {
+    min-width: 1600px;
   }
 }
 
 .wrap-address {
-  width: 231px;
-  margin-right: 70px;
+  width: 100%;
+  margin-bottom: 60px;
+  
+  // width: 231px;
+  // margin-right: 70px;
 }
 
 .wrap-social {
-  width: 206px;
-  margin-right: 93px;
+  width: 100%;
+  margin-bottom: 60px;
+
+  // width: 206px;
+  // margin-right: 93px;
 }
 
 .wrap-subscribe {
-  width: 570px;
+  width: 100%;
+
+  // width: 570px;
 }

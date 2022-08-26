@@ -2,6 +2,7 @@
   @include df-center;
   width: 200px;
   height: 50px;
+  @include margin-lr-auto;
 
   color: var(--white-color);
   background-color: var(--acent-color);
@@ -22,7 +23,7 @@
 }
 
 .hero__btn {
-  @include margin-lr-auto;
+  // @include margin-lr-auto;
 
   @include desktop {
   width: 216px;
@@ -30,7 +31,7 @@
 }
 
 .order-form__button {
-  @include margin-lr-auto;
+  // @include margin-lr-auto;
 }
 
 .button__icon {

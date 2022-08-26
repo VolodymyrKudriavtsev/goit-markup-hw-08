@@ -1,8 +1,12 @@
 .logo {
   color: var(--black-color);
   font-family: Raleway, sans-serif;
-  @include fonts (700, 26px, 1.19, 0.03em, null, null);
+  @include fonts(700, 24px, 1.17, 0.03em, null, null);
   text-decoration: none;
+
+  @include desktop {
+    @include fonts(null, 26px, 1.19, null, null, null);
+  }
 }
 
 .header__logo {
@@ -10,7 +14,7 @@
 }
 
 .footer__logo {
-  display: inline-block;
+  display: block;
   color: var(--white-color);
   margin-bottom: 20px;
 }
@@ -18,4 +22,3 @@
 .logo__blue {
   color: var(--acent-color);
 }
-
