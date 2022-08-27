@@ -5,7 +5,7 @@
 
   .container {
     height: 100%;
-    @include df-center($jc:space-between);
+    @include df-center($jc:flex-start);
   }
 
   @include tablet {

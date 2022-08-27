@@ -4,7 +4,6 @@
 
 .header__contacts {
   margin-left: auto;
-  gap: 50px;
   display: none;
 
   @include tablet {
@@ -13,6 +12,25 @@
 
   @include desktop {
     display: flex;
+    gap: 50px;
+  }
+}
+
+.contacts__item:nth-child(1) {
+  @media screen and (max-width: 1199.5px) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__mail {
+  @include tablet {
+    padding-top: 21px;
+  }
+}
+
+.contacts__tel {
+  @include tablet {
+    padding-bottom: 21px;
   }
 }
 
@@ -36,15 +54,6 @@
     padding-bottom: 32px;
   }
 }
-
-// ?? не работает
-
-// .contacts__mail {
-//   @media screen and (max-width: 1199.5) {
-//     padding-top: 21px;
-//     margin-bottom: 10px;
-//   }
-// }
 
 .contacts__tel-icon,
 .contacts__mail-icon {

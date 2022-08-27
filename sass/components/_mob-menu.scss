@@ -1,0 +1,67 @@
+.menu-open,
+.menu-close {
+  @include df-center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-color: transparent;
+}
+
+.menu-open {
+  margin-left: auto;
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.menu-nav__link {
+  color: var(--h-text-color);
+  @include fonts (500, 14px, 1.14, 0.02em, null, null);
+  text-decoration: none;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  outline: transparent;
+  &.current {
+    color: --acent-color;
+  }
+
+//   .current {
+//     color: --;
+  }
+
+// .mob-menu {
+//   margin-left: auto;
+
+//   @include tablet {
+//     display: none;
+//   }
+// }
+
+// .mob-menu__wrap {
+//   position: fixed;
+//   z-index: 100;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: --white-color;
+//   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+// }
