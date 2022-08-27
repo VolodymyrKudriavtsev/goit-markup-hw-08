@@ -688,14 +688,41 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 15px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+@media screen and (max-width: 767.5px) {
+  .filter {
+    max-width: 330px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .projects__filter {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .projects__filter {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__filter {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__button {
@@ -738,8 +765,18 @@ img {
 }
 
 .cards__item {
-  width: calc((100% - 60px) / 3);
   background-color: var(--white-color);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .cards__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .cards__link {
@@ -767,7 +804,11 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 77px;
+  padding-bottom: 77px;
+  overflow: auto;
   color: var(--white-color);
   font-size: 18px;
   line-height: 1.56;
@@ -782,6 +823,17 @@ img {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
 }
+@media screen and (min-width: 768px) {
+  .cards__overlay {
+    padding-top: 49px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__overlay {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
+}
 .cards__link:hover .cards__overlay, .cards__link:focus .cards__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -790,6 +842,11 @@ img {
 .cards__description {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .cards .cards__item:nth-child(1) .cards__description {
+    padding-bottom: 56px;
+  }
 }
 
 .cards__title {
