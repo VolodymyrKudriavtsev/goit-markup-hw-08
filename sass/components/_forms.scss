@@ -3,7 +3,6 @@
   @include desktop {
     display: flex;
   }
-  //
 }
 
 .subscribe-form__lable {
@@ -89,7 +88,7 @@
 .order-form__name {
   display: block;
   margin-bottom: 4px;
-  @include fonts(null, 12px, 1.16, 0.01em, null, null);
+  @include fonts(null, 12px, 1.17, 0.01em, null, null);
 }
 
 .order-form__lable {

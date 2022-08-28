@@ -9,7 +9,7 @@
 .textarea__name {
   display: block;
   margin-bottom: 4px;
-  @include fonts (null, 12px, 1.16, 0.01em, null, null);
+  @include fonts(null, 12px, 1.17, 0.01em, null, null);
 }
 
 .textarea__text {
@@ -33,10 +33,10 @@
     display: block;
     margin-bottom: 4px;
     color: rgba(117, 117, 117, 0.5);
-    @include fonts (null, 12px, 1.16, 0.01em, null, null);
+    @include fonts(null, 14px, 1.14, 0.01em, null, null);
+
+    @include desktop {
+      @include fonts(null, 12px, 1.17, null, null, null);
+    }
   }
 }
-
-
-
-

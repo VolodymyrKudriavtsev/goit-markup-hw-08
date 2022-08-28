@@ -9,7 +9,7 @@
   margin: 0 auto 30px;
 
   @include mobile {
-    @include fonts(null, 26px, null, null, null, null);
+    font-size: 26px;
   }
 
   @include desktop {

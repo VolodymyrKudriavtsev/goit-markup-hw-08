@@ -289,10 +289,8 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts__mail,
 .contacts__tel {
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -1134,7 +1132,7 @@ img {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
@@ -1190,7 +1188,7 @@ img {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
@@ -1217,41 +1215,63 @@ img {
   display: block;
   margin-bottom: 4px;
   color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
 }
 .textarea__text::-moz-placeholder {
   display: block;
   margin-bottom: 4px;
   color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
 }
 .textarea__text:-ms-input-placeholder {
   display: block;
   margin-bottom: 4px;
   color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
 }
 .textarea__text::-ms-input-placeholder {
   display: block;
   margin-bottom: 4px;
   color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
 }
 .textarea__text::placeholder {
   display: block;
   margin-bottom: 4px;
   color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
+}
+@media screen and (min-width: 1200px) {
+  .textarea__text::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .textarea__text::-moz-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .textarea__text:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .textarea__text::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .textarea__text::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .checkbox {
@@ -1261,10 +1281,17 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 12px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    margin-left: 12px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .order-form__checkbox {
@@ -1332,22 +1359,12 @@ img {
   pointer-events: none;
 }
 
-.modal__title {
-  margin-bottom: 12px;
-  color: var(--h-text-color);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
+  width: calc(100% - 30px);
+  min-height: 609px;
   padding: 40px;
   background: var(--white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1371,6 +1388,18 @@ img {
   -webkit-transform: translate(-50%, -50%) scale(0.5) rotate(90deg);
           transform: translate(-50%, -50%) scale(0.5) rotate(90deg);
   opacity: 0;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__close-button {
@@ -1406,6 +1435,26 @@ img {
 
 .modal__icon {
   fill: currentColor;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+  color: var(--h-text-color);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .modal__title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .hero {
