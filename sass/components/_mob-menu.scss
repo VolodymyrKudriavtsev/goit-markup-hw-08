@@ -50,7 +50,8 @@
     0px 1px 3px rgba(0, 0, 0, 0.16);
   overflow: auto;
 
-  transition-property: transform, visibility;
+  transform: translate(100%);
+  transition-property: transform;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 
@@ -58,13 +59,11 @@
     text-decoration: none;
   }
 
-  &.is-hidden {
-    transform: translateX(100%);
-    visibility: hidden;
-    pointer-events: none;
+  &.is-open {
+    transform: translateX(0);
+    }
   }
-}
-
+  
 .menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
